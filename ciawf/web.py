@@ -1,3 +1,6 @@
+from ciawf.urls import COUNTRIES
+
+
 class Interface:
     def __init__(self, cache_refresh_period_seconds: int = 86_400) -> None:
         self.__crps = cache_refresh_period_seconds
