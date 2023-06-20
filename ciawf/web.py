@@ -10,6 +10,9 @@ class Interface:
     def cache(self) -> dict[str, str]:
         return self.__cache
 
+    def check(self, key: str) -> bool:
+        return key in self.cache.keys()
+
     def get_state_names(self):
         pass
 
