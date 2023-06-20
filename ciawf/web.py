@@ -1,5 +1,6 @@
 class Interface:
-    def __init__(self) -> None:
+    def __init__(self, cache_refresh_period_seconds: int = 86_400) -> None:
+        self.__crps = cache_refresh_period_seconds
         self.cache: dict = dict()
 
     def get_state_names(self):
