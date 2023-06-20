@@ -3,6 +3,10 @@ class Interface:
         self.__crps = cache_refresh_period_seconds
         self.__cache: dict = dict()
 
+    @property
+    def cache(self) -> dict[str, str]:
+        return self.__cache
+
     def get_state_names(self):
         pass
 
