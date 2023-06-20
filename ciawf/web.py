@@ -1,4 +1,4 @@
-from ciawf.urls import COUNTRIES
+from ciawf.url import COUNTRIES
 
 
 class Interface:
